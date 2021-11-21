@@ -27,11 +27,11 @@ public class factorialNumber {
 		 * 
 		 */
 
-		Scanner dp = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 
 		System.out.println("enter a number for factorial");
 
-		int number = dp.nextInt();
+		int number = scan.nextInt();
 		int factorialFor = 1;
 		int factorialWhile = 1;
 		int factorialDoWhile = 1;
@@ -65,7 +65,7 @@ public class factorialNumber {
 
 		System.out.println("With DoWhile loop =" + factorialDoWhile);
 
-		dp.close();
+		scan.close();
 
 	}
 
