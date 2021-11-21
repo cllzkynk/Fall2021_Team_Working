@@ -1,4 +1,4 @@
-package projects_01;
+package Projects_01;
 
 import java.util.Scanner;
 
@@ -43,22 +43,28 @@ public class age {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter your age");
 
         int myAge = scanner.nextInt();
-  if (myAge<=10) {
-	  System.out.println("Facebook hesabi acmak icin cok gencsin");
-} else if (myAge<=16) {
-	System.out.println("Ehliyet almak icin cok gencsin");
-} else if (myAge<=18) {
-	System.out.println("Dovme yaptirmak icin cok gencsin");
-}else if (myAge<=21) {
-	System.out.println("Alkol icmek  icin cok gencsin");
-}else {
-	System.out.println(" istedigini yapabilirsin ama dikkatli ol gozum uzerinde");
-}
 
-        
-scanner.close();
-    }
-}
+       //  code Start here don't change before this line
+
+        //System.out.println("too young to drink alcohol");
+
+        // kodu burdan baslatin ve bu satirdan onceki kodlari degistirmeyin
+
+        if (myAge<=10) {
+      	  System.out.println("Facebook hesabi acmak icin cok gencsin");
+      } else if (myAge<=16) {
+      	System.out.println("Ehliyet almak icin cok gencsin");
+      } else if (myAge<=18) {
+      	System.out.println("Dovme yaptirmak icin cok gencsin");
+      }else if (myAge<=21) {
+      	System.out.println("Alkol icmek  icin cok gencsin");
+      }else {
+      	System.out.println(" istedigini yapabilirsin ama dikkatli ol gozum uzerinde");
+      }
+
+              
+      scanner.close();
+          }
+      }

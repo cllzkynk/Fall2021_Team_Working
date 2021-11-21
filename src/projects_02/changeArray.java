@@ -1,4 +1,4 @@
-package projects_02;
+package Projects_02;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -43,4 +43,5 @@ public class changeArray {
 //        kullanman gereken -> UseThisArray
 
 
+}
 }

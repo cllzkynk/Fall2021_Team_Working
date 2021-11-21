@@ -1,4 +1,4 @@
-package projects_01;
+package Projects_01;
 
 import java.util.Scanner;
 
@@ -11,9 +11,9 @@ public class totalLetterCountCheck {
      */
 
     /*
-     Bir String verildiğinde
+     Bir String verildiÄŸinde
 
-     Eger String harf sayisi tek ise true print et değilse false print et
+     Eger String harf sayisi tek ise true print et deÄŸilse false print et
 
      */
 
@@ -24,7 +24,20 @@ public class totalLetterCountCheck {
         String word = scanner.nextLine();
 
         //  code Start here don't change before this line
-        // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
-
-    }
+        // kodu burdan baÅŸlatÄ±n ve bu satÄ±rdan Ã¶nceki kodlarÄ± deÄŸiÅŸtirmeyin
+    	// code Start here don't change before this line
+		// kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
+		
+		String wordFormatlı= word.replaceAll("[^a-zA-Z]", "");
+		
+		int harfSayisi=wordFormatlı.length();
+		System.out.println(wordFormatlı);
+		if (harfSayisi%2==0) {
+			System.out.println("false");
+		}else {
+			System.out.println("true");
+		}
+		
+	scanner.close();	
+}
 }

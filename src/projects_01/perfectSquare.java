@@ -1,4 +1,4 @@
-package projects_01;
+package Projects_01;
 
 import java.util.Scanner;
 
@@ -59,7 +59,23 @@ public class perfectSquare {
         //  code Start here don't change before this line
         // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
 
+        boolean kontrol = false;
+		for (int i = 1; i <= input; i++) {
+			for (int j = 1; j <= input; j++) {
 
-    }
+				if ((i == j) && (i * j == input)) {
+					kontrol = true;
+					break;
+				}
+			}
 
+		}
+		if (kontrol) {
+			System.out.println("perfect squaredir");
+
+		} else {
+			System.out.println("perfect square degildir");
+		}
+scanner.close();
+	}
 }

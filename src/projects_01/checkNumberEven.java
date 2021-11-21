@@ -1,4 +1,4 @@
-package projects_01;
+package Projects_01;
 
 import java.util.Scanner;
 
@@ -26,17 +26,19 @@ public class checkNumberEven {
         result true ya da false olmalı.
 
      */
-public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Please enter a number");
+	public static void main(String[] args) {
+	    Scanner scanner = new Scanner(System.in);
+	    System.out.println("Please enter a number");
 
-    int num1 = scanner.nextInt();
-    
-    if (num1%2==0) {
-		System.out.println("Even number");
-	} else {
-		System.out.println("odd number");
+	    int num1 = scanner.nextInt();
+	    
+	    if (num1%2==0) {
+			System.out.println("Even number");
+		} else {
+			System.out.println("odd number");
+		}
+	    scanner.close();
 	}
-    scanner.close();
-}
-}
+	}
+
+

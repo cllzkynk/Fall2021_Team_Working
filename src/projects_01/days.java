@@ -1,4 +1,4 @@
-package projects_01;
+package Projects_01;
 
 import java.util.Scanner;
 
@@ -43,9 +43,54 @@ public class days {
         //  code Start here don't change before this line
         //  kodu burdan baÅŸlatÄ±n ve bu satÄ±rdan Ã¶nceki kodlari degiÅŸtirmeyin
 
+        System.out.println("görmek istediginiz gunun no sunu yazın çıkmak icin 10 a basin");
+    	
+   	 day = scanner.nextInt();
+   	 
 
-    }
+   		
+   	
+   	 
+   	 
+   	 
+   	 
+       //  code Start here don't change before this line
+       //  kodu burdan başlatın ve bu satırdan önceki kodlari degiştirmeyin
+             
+       switch(day) {
+       
+       case 1:
+       System.out.println("Monday");
+       break;
+       
+       case 2:
+           System.out.println("Tueshday");
+           break;
+           
+       case 3:
+           System.out.println("Wednesday");
+           break;
+           
+       case 4:
+           System.out.println("Thursday");
+           break;
+           
+       case 5:
+           System.out.println("Friday");
+           break;
+           
+       case 6:
+           System.out.println("Saturday");
+           break;
+       case 7:
+           System.out.println("Sunday");
+           break;
+           
+       default:
+       	System.out.println("gecerli gun sayisi gir");
+       break;
+       
+       }
+
+scanner.close();}
 }
-
-
-

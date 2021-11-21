@@ -1,92 +1,53 @@
-package projects_01;
+package Projects_01;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class factorialNumber {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		/*
-		 * Write a program to find the factorial value of any number entered through the
-		 * scanner class.
-		 * 
-		 * Example: number:7 factorial:1*2*3*4*5*6*7=5040 output should be == 5040
-		 * 
-		 * number:6 factorial:1*2*3*4*5*6=720 output should be == 720
-		 * 
-		 */
+        /*
+        Write a program to find the factorial value of any number entered through the scanner class.
 
-		/*
-		 * Scanner class aracılığıyla girilen herhangi bir sayının faktöriyel
-		 * değerini bulmak için bir program yazın.
-		 * 
-		 * number:6 factorial:1*2*3*4*5*6=720 output ---> 720
-		 * 
-		 * 
-		 */
+        Example:
+        number:7
+        factorial:1*2*3*4*5*6*7=5040
+        output should be == 5040
 
-		Scanner scan = new Scanner(System.in);
+        number:6
+        factorial:1*2*3*4*5*6=720
+        output should be == 720
 
-		System.out.println("enter a number for factorial");
+       */
 
-		int number = scan.nextInt();
-		int factorialFor = 1;
-		int factorialWhile = 1;
-		int factorialDoWhile = 1;
-		int check = 1;
-		int numberForDo = number;
-		// code start here use int number
-		// kodu burdan baslatin ve int number kullanın
+        /*
+        Scanner class aracılığıyla girilen herhangi bir sayının faktöriyel değerini bulmak için bir program yazın.
 
-		arr(number);
+        number:6
+        factorial:1*2*3*4*5*6=720
+        output ---> 720
 
-		System.out.println("Wiht method       =" + fak(number));
 
-		for (int i = 1; i <= number; i++) {
-			factorialFor *= i;
-		}
+         */
 
-		System.out.println("With foor loop    =" + factorialFor);
+        Scanner dp = new Scanner(System.in);
 
-		while (number != 0) {
-			factorialWhile *= number;
-			number--;
-		}
+        String  strNum = dp.nextLine();
 
-		System.out.println("With While loop   =" + factorialWhile);
+        int number = Integer.parseInt(strNum);
 
-		do {
-			factorialDoWhile *= check;
-			check++;
+         //      code start here  use int number
+         //      kodu burdan başlatın ve int number kullanın
 
-		} while (check <= numberForDo);
-
-		System.out.println("With DoWhile loop =" + factorialDoWhile);
-
-		scan.close();
-
+        System.out.println(faktoriyel(number));
+dp.close();
 	}
 
-	public static void arr(int number) {
-		int carpimdepo = 1;
-
-		int arr[] = new int[number];
-		for (int i = 1; i <= arr.length; i++) {
-			carpimdepo *= i;
-			arr[i - 1] = carpimdepo;
+	public static int faktoriyel(int aday) {
+		if (aday > 0) {
+			return aday * faktoriyel(aday - 1);
 		}
-		System.out.println(Arrays.toString(arr));
-
-		System.out.println("\nWith array metod  =" + Array.getInt(arr, arr.length - 1));
+		return 1;
 	}
 
-	public static int fak(int number) {
-		if (number == 1)
-			return 1;
-		if (number == 0)
-			return 1;
-		return number * fak(number - 1);
-	}
 }

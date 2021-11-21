@@ -1,4 +1,4 @@
-package projects_02;
+package Projects_02;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -46,7 +46,8 @@ ters arrayi yazdır
      //        Koda burdan başlayın
 
 
-     
+    }
+}
 
 
 
