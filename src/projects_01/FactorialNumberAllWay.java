@@ -1,9 +1,11 @@
 package Projects_01;
 
 import java.lang.reflect.Array;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
+@SuppressWarnings("unused")
 public class FactorialNumberAllWay {
 
 	public static void main(String[] args) {
@@ -31,6 +33,8 @@ public class FactorialNumberAllWay {
 		int numberForDo = number;
 		// code start here use int number
 		// kodu burdan baslatin ve int number kullanýn
+		
+
 
 		arr(number);
 
@@ -69,7 +73,7 @@ public class FactorialNumberAllWay {
 			carpimdepo *= i;
 			arr[i - 1] = carpimdepo;
 		}
-		System.out.println(Arrays.toString(arr));
+	//	System.out.println(Arrays.toString(arr));
 
 		System.out.println("\nWith array metod  =" + Array.getInt(arr, arr.length - 1));
 	}

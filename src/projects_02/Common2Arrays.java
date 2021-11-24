@@ -1,5 +1,6 @@
 package Projects_02;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Common2Arrays {
@@ -16,9 +17,9 @@ public class Common2Arrays {
 
     /*
 
-        a ve b den oluşan 2 int array verildiğinde, aynı ilk öğeye sahiplerse veya aynı son öğeye sahiplerse true değerini döndürün.
+        a ve b den olusan 2 int array verildiginde, ayni ilk ogeye sahiplerse veya ayni son ogeye sahiplerse true degerini dondurun.
 
-        Her iki arrayin lengthi(öğe sayısı) 1 veya daha fazla olacaktır.
+        Her iki arrayin lengthi(oge sayisi) 1 veya daha fazla olacaktir.
 
        commonEnd([1, 2, 3], [7, 3]) → true
        commonEnd([1, 2, 3], [7, 3, 2]) → false
@@ -49,7 +50,7 @@ public class Common2Arrays {
         Don't change or delete anything before this line
 
 
-        // Bu satırdan önceki satırlarda hicbirşeyi silme ve degiştirme
+        // Bu satirdan onceki satirlarda hicbirseyi silme ve degistirme
         // koda burdan basla
         // array1 and array2  kullan
 
@@ -58,10 +59,28 @@ public class Common2Arrays {
  */
         
 
+System.out.println(Arrays.toString(array1));
+System.out.println(Arrays.toString(array2));
+
+boolean flag=false;
+for (int i = 0; i < array2.length; i++) {
+	for (int j = 0; j < array1.length; j++) {
+		if (array2[i]==array1[j] ) {
+			flag=true;
+		
+			break;
+		}
+	}
+}
+
+if (flag) {
+	System.out.println("Girilen degerlerin olusturdugu  iki farkli arrayda ortak eleman mevcut");
+}else {
+	System.out.println("Girilen degerlerin olusturdugu  iki farkli arrayda ortak eleman yok");
+}
 
 
-
-
+scan.close();
     }
 
 }

@@ -42,8 +42,12 @@ public class sameFirstAndLast {
 
       // Koda burdan başlayin
 
-       
-
+       if(useThisArray[0].equals(useThisArray[useThisArray.length-1])) {
+    	   System.out.println("Ilk ve son ayni ==> True");
+       }else {
+    	   System.out.println("Ilk ve son farkli ==> False");
+       }
+scan.close();
     }
 
 

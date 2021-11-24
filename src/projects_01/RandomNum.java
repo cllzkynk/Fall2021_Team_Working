@@ -30,13 +30,16 @@ public class RandomNum {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("bir sasyi giriniz : ");
+        System.out.print("bir sayi giriniz : ");
         int max=scanner.nextInt();
 
         //  code Start here don't change before this line
         // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
 
-		
-
+        Random r=new Random(); //random s�n�f�
+        int a=r.nextInt(max);
+        
+        System.out.println(a);
+scanner.close();
     }
 }

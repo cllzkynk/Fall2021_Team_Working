@@ -43,9 +43,9 @@ public class RandomNumberBetweenTwoNumbers {
 
         //  code Start here don't change before this line
        // kodu burdan başlatın ve bu satırdan önceki kodlari değiştirmeyin
-
-
-
-
+        Random random = new Random();
+        int randomSayi = random.nextInt((max - min  ) + 1) + min;
+System.out.println(randomSayi);
+scanner.close();
     }
 }

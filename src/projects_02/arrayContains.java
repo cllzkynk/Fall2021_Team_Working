@@ -18,10 +18,10 @@ public class arrayContains {
 
     /*
 
-         Artan düzende sıralanmış iki adet ınt array göz önüne alındığında,
-         dış ve iç,
-         içteki tüm sayılar dışta görünüyorsa true değerini döndürür.
-         İlk arrayin ikinci arrayi içerdiğini doğrulayın.
+         Artan duzende siralanmis iki adet int array goz onune alindiginda,
+         dis ve ic,
+         icteki tum sayilar dista gorunuyorsa true degerini dondurur.
+         İlk arrayin ikinci arrayi icerdigini dogrulayin.
 
          linearIn([1, 2, 4, 6], [2, 4]) → true
          linearIn([1, 2, 4, 6], [2, 3, 4]) → false
@@ -54,7 +54,7 @@ public class arrayContains {
 //        Code start here
 //        Use the array name UseThisArray1 and UseThisArray2
 
-//        Koda burdan başla
+//        Koda burdan basla
 //        UseThisArray1 ve UseThisArray2 array isimlerini kullan
 
         boolean b1 = false;
@@ -77,7 +77,7 @@ public class arrayContains {
         System.out.println(b1);
 
 
-
+scan.close();
 
 
     }

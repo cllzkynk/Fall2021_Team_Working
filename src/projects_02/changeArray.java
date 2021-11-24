@@ -20,15 +20,15 @@ public class changeArray {
 
 
     /*
-       String bir array verildiğinde
+       String bir array verildiginde
 
-       Eger String Orange içeriyorsa bütün  Orange leri Apple  çevir
+       Eger String Orange iceriyorsa butun  Orange leri Apple  cevir
 
-       Örnek:
+       ornek:
 
        Array : Peach , Berry , Orange , WaterMelon , Orange
 
-       Result böyle olmalı --> : Peach , Berry , Apple , WaterMelon , Apple
+       Result boyle olmali --> : Peach , Berry , Apple , WaterMelon , Apple
 
        Arrayi print edin
 
@@ -36,12 +36,27 @@ public class changeArray {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your fruit list");
         String myStr = scan.nextLine();
-        String[] UseThisArray = myStr.split(" ");
+        String[] UseThisArray = myStr.split(", ");
 
 //        Koda burdan başla
 //        kullanman gereken -> UseThisArray
+           for (int i = 0; i < UseThisArray.length; i++) {
+			if (UseThisArray[i].toLowerCase().equals("orange")) {
+				UseThisArray[i]="Apple";
+			}
+		}
 
-
+        System.out.println(Arrays.toString(UseThisArray));
+        
+        
+        
+        
+        
+        
+        
+       scan.close(); 
+        
 }
 }

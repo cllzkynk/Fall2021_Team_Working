@@ -49,6 +49,7 @@ public class printEvenNumbers {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your limit number");
 
         int maxNum = scanner.nextInt();
 
@@ -56,6 +57,16 @@ public class printEvenNumbers {
         // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
 
 //
+        for (int i = 0; i <=maxNum; i++) {
+			if(i%2==0) {
+				System.out.print(i+" ");
+			}
+		}
+        
+        
+        
+      scanner.close();  
+        
         }
     }
 

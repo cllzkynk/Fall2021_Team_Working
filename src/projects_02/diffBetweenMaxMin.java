@@ -1,5 +1,6 @@
 package Projects_02;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class diffBetweenMaxMin {
@@ -31,7 +32,7 @@ public class diffBetweenMaxMin {
      */
 
     public static void main(String[] args) {
-
+System.out.println("Arayyin elementlerini gir her elementrten sonra space e bas");
         Scanner scan = new Scanner(System.in);
 
         String myStr = scan.nextLine();
@@ -49,7 +50,14 @@ public class diffBetweenMaxMin {
     
     // Your code start here. Don't remove or change anything before this line. Your array is -> useThisArray in line 27
     // Kodlamaya burdan başla.Bu satırdan önceki satırlarda hiçbirşeyi kaldırma ve degiştirme. Kullanacağın array 27.ci satırda  --> useThisArray
-
+// bigDiff([7, 2, 10, 9]) → 10-2 result = 8
+        
+        
+   System.out.println(Arrays.toString(useThisArray));     
+       Arrays.sort(useThisArray);
+       System.out.println("Dizinizin en buyuk elementi ve en kucuk elementi arasi fark ; \n");
+       System.out.println(useThisArray[useThisArray.length-1]+"-"+useThisArray[0]+"="+(useThisArray[useThisArray.length-1]-useThisArray[0]));
+    scan.close();    
 }
 
 }

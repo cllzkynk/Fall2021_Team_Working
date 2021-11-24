@@ -1,5 +1,6 @@
 package Projects_01;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class getTotal {
@@ -42,7 +43,8 @@ public class getTotal {
 
 
     */
-    public static void main(String[] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -62,13 +64,22 @@ public class getTotal {
         // kodu burdan başlatın ve bu satırdan önceki kodlari değiştirmeyin
         // String num1,num2,num3 kullanın
 
+for (int i = 0; i < elements.length; i++) {
+	elements[i]=elements[i].replaceAll("\\D", "");
+}
 
+System.out.println("Sadece sayilardan olusan array : "+Arrays.toString(elements));
+int toplam=0;
+for (int i = 0; i < elements.length; i++) {
+	toplam+=Integer.parseInt(elements[i]);
+}
 
-
-
-
-
-
+if (toplam>=0) {
+	System.out.println("Sayilardan olusan arrayin toplami : "+toplam);
+}else {
+	System.out.println("-1");
+}
+scanner.close();
 
     }
 }
