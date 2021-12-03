@@ -1,8 +1,9 @@
 package randoM;
 
-import java.lang.reflect.Array;
+
+
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -55,7 +56,7 @@ public class dublicatedNumber {				// kullanýcýdan liste uzunluðunu ve lement
 		
 		System.out.println("Double number in your list  : " + doubleList);
 		System.out.println("Number used more than two  : " + multipleList);
-	}															// main metot sonu
+	scan.close();}															// main metot sonu
 	
 	public static int dublicate(int num2,int length2) {		// dublicate bloðu
 		
