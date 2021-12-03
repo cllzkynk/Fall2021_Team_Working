@@ -68,7 +68,7 @@ public class removeDuplicates {
 		// Kodlamaya burdan basla.bu satirdan onceki satirlarda hicbirseyi degistirme.
 		// useThisLine arrayini kullan
 
-		System.out.println(Arrays.toString(useThisArray));
+		System.out.println("Girilenlerle    olusan   array   "+Arrays.toString(useThisArray));
 
 		int i = 0;
 
@@ -81,11 +81,11 @@ public class removeDuplicates {
 			}
 		}
 
-		System.out.println(str);
+		//System.out.println(str);
 
 		String myNewArr[] = str.split(" ");
 
-		System.out.println(Arrays.toString(myNewArr));
+		System.out.println("Tekrarlardan arindirilmis array  "+Arrays.toString(myNewArr));
 
 	
 scan.close();

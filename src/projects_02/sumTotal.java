@@ -33,10 +33,18 @@ public class sumTotal {
 
 //        Koda burdan başlayın
 
-		String arrS[][] = { { "$12", "$22", "5" }, { "€9", "€40", "$1", "$2" }, { "€12" } };
+		String arrS[][] = { { "$12", "$22", "5$" }, { "€9", "€40", "$1", "$2" }, { "€12" } };
 
-		System.out.printf(Arrays.deepToString(carp(arrS)));
+		// System.out.printf(Arrays.deepToString(carp(arrS)));
 		
+		
+		
+	
+		 System.out.printf(Arrays.deepToString(carp(arrS)));
+		
+		
+		
+	//	System.out.printf(String.format("%.2f", carp(arrS)), Arrays.deepToString(carp(arrS)));
 
 	}
 
@@ -44,9 +52,15 @@ public class sumTotal {
 		for (int i = 0; i < arrS.length; i++) {
 			for (int j = 0; j < arrS[i].length; j++) {
 				if (arrS[i][j].contains("$")) {
-					arrS[i][j] =""+(Double.valueOf(arrS[0][0].replaceAll("\\W", ""))*3.2);
+ 					
+					 arrS[i][j] = ""+String.format("%.2f", (Double.valueOf(arrS[i][j].replaceAll("\\D", ""))*3.2));
+
+					
+					//arrS[i][j] =""+( Double.valueOf(arrS[i][j].replaceAll("\\D", ""))*3.2);
 				} else if (arrS[i][j].contains("€")) {
-					arrS[i][j] = ""+(Double.valueOf(arrS[0][0].replaceAll("\\W", ""))*4.2);
+				
+ 					
+					 arrS[i][j] = ""+String.format("%.2f", (Double.valueOf(arrS[i][j].replaceAll("\\D", ""))*4.2));
 				}
 			}
 		}

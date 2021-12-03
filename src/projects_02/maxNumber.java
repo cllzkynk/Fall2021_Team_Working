@@ -38,6 +38,6 @@ for (int i = 0; i < arr.length; i++) {
 	}
 }
 
-System.out.println("AD arrayde en buyuk element  :  "+ max);
+System.out.println("2D arrayde en buyuk element  :  "+ max);
 }
 }

@@ -34,7 +34,7 @@ public static void main(String[] args) {
 		}
 	}
 
-	System.out.println("AD arrayde en kucuk element  :  "+ min);
+	System.out.println("2D arrayde en kucuk element  :  "+ min);
 	
 	
 
