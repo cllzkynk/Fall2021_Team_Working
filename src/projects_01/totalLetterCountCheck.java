@@ -30,9 +30,12 @@ public class totalLetterCountCheck {
 
 		String wordFormatlı = word.replaceAll("[^a-zA-Z]", "");
 
-		int harfSayisi = wordFormatlı.length();
+		
+		
+
+		//  int harfSayisi = wordFormatlı.length();
 		System.out.println(wordFormatlı);
-		if (harfSayisi % 2 == 0) {
+		if (wordFormatlı.length() % 2 == 0) {
 			System.out.println("false");
 		} else {
 			System.out.println("true");

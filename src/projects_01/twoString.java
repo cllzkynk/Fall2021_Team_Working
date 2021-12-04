@@ -10,7 +10,7 @@ public class twoString {
 		 * Given two string by using scanner class and add each other if first word last
 		 * letter is same with second word first letter then remove one of them.
 		 * 
-		 * Example: "abc", "cat" --> "abcat" "abc", "dog" -->"abcdog"
+		 * Example: "abc", "catalog" --> "abcat" "abc", "dog" -->"abcdog"
 		 */
 
 		/*
@@ -19,7 +19,7 @@ public class twoString {
 		 * Eger ilk kelimenin son harfi ikinci kelimenin ilk harfi ile aynı ise aynı
 		 * olan harflerin birisini kaldırın
 		 * 
-		 * Örnek: "abc", "cat" --> "abcat" "abc", "dog" -->"abcdog"
+		 * Ornek: "abc", "cat" --> "abcat" "abc", "dog" -->"abcdog"
 		 * 
 		 * 
 		 */
@@ -27,19 +27,26 @@ public class twoString {
 
 		String allElements = dp.nextLine();
 
-		String[] elements = allElements.split(" ");
+		String[] elements = allElements.split(" "); // ali can===> [Ali , Can]
 
 		String s1 = elements[0];
 
 		String s2 = elements[1];
+		String sonuc="";
 
 		// code start here use s1 and s2 as words
 		// kodu burdan başlatın ve s1 ve s2 kelime olarak kullanın
 
 		if (s1.charAt(s1.length() - 1) == s2.charAt(0)) {
-			System.out.println(s1 + s2.substring(1));
+			sonuc=s1 + s2.substring(1);
+			
+			
+			//System.out.println(s1 + s2.substring(1));
 		} else {
-			System.out.println(s1 + s2.substring(0));
+			
+			sonuc=s1 + s2.substring(0);
+			
+			//System.out.println(s1 + s2.substring(0));
 		}
 		dp.close();
 	}

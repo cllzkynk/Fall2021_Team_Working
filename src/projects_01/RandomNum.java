@@ -27,19 +27,39 @@ public class RandomNum {
 
 
   */
-    public static void main(String[] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("bir sayi giriniz : ");
-        int max=scanner.nextInt();
-
+       // System.out.print("bir sayi giriniz : ");
+       // int max=scanner.nextInt();
+ //double s=scanner.nextDouble();
         //  code Start here don't change before this line
         // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
 
         Random r=new Random(); //random s�n�f�
-        int a=r.nextInt(max);
+     int a=r.nextInt(scanner.nextInt());
+                               //50
+     //   System.out.println(a);
         
-        System.out.println(a);
-scanner.close();
+
+        
+        int arada=r.nextInt((35)+1)+20;
+        System.out.println(arada);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+  scanner.close();
     }
 }

@@ -44,7 +44,7 @@ public class sumTotal {
 		
 		
 		
-	//	System.out.printf(String.format("%.2f", carp(arrS)), Arrays.deepToString(carp(arrS)));
+
 
 	}
 
@@ -59,7 +59,7 @@ public class sumTotal {
 					//arrS[i][j] =""+( Double.valueOf(arrS[i][j].replaceAll("\\D", ""))*3.2);
 				} else if (arrS[i][j].contains("€")) {
 				
- 					
+					//arrS[i][j] =""+( Double.valueOf(arrS[i][j].replaceAll("\\D", ""))*4.2);
 					 arrS[i][j] = ""+String.format("%.2f", (Double.valueOf(arrS[i][j].replaceAll("\\D", ""))*4.2));
 				}
 			}

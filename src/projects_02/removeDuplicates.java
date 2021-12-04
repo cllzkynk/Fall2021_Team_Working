@@ -1,10 +1,12 @@
 package Projects_02;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class removeDuplicates {
+
 
 	/*
 	 * Given int array
@@ -33,7 +35,9 @@ public class removeDuplicates {
 	 * 
 	 * Örnek:
 	 * 
-	 * Array is 1,2,2,2,3,3,3,4,4,4,5,5,5
+	 * Array is
+	 * 
+	 * 1,2,2,2,3,3,3,4,4,4,5,5,5
 	 * 
 	 * //1 2 2 2 3 3 3 4 4 4 5 5 5
 	 * 
@@ -46,48 +50,38 @@ public class removeDuplicates {
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
-
+		System.out.println("gir bisiler");
 		String myStr = scan.nextLine();
 
-		String[] arr = myStr.split(" ");
+		String[] arr = myStr.split(" "); // "1","2", ===> 1,2
 
 		int[] useThisArray = new int[arr.length];
 
 		for (int i = 0; i < useThisArray.length; i++) {
 
 			int num = Integer.parseInt(arr[i]);
+			// Integer.parseInt(//String) ==>String sayi metematiksel sayiya donusur "1"==>
+			// 1
 
 			useThisArray[i] = num;
 
 		}
+		System.out.println(uniqCount(useThisArray)  + " Result = "+ uniqCount(useThisArray).size());
+	}
 
-//        code start here
-//        dont change anything before this line
-//        your Array is useThisLine
+	// 1 2 2 3 1 3 4 4 7 5
+	public static List<Integer> uniqCount(int[] useThisArray) {
 
-		// Kodlamaya burdan basla.bu satirdan onceki satirlarda hicbirseyi degistirme.
-		// useThisLine arrayini kullan
+		List<Integer> list = new ArrayList<>();
 
-		System.out.println("Girilenlerle    olusan   array   "+Arrays.toString(useThisArray));
-
-		int i = 0;
-
-		String str = "";
-		String check = "";
-		for (i = 0; i < useThisArray.length; i++) {
-			check = Integer.toString(useThisArray[i]);
-			if (!str.contains(check)) {
-				str += check + " ";
+		for (int i = 0; i < useThisArray.length; i++) {
+			for (int j = i + 1; j < useThisArray.length; j++) {
+				if (!list.contains(useThisArray[i])) {
+					list.add(useThisArray[i]);
+				}
 			}
 		}
 
-		//System.out.println(str);
-
-		String myNewArr[] = str.split(" ");
-
-		System.out.println("Tekrarlardan arindirilmis array  "+Arrays.toString(myNewArr));
-
-	
-scan.close();
+		return list;
 	}
 }
