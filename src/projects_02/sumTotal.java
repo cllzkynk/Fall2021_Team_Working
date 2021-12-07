@@ -53,14 +53,14 @@ public class sumTotal {
 			for (int j = 0; j < arrS[i].length; j++) {
 				if (arrS[i][j].contains("$")) {
  					
-					 arrS[i][j] = ""+String.format("%.2f", (Double.valueOf(arrS[i][j].replaceAll("\\D", ""))*3.2));
+					 arrS[i][j] = String.format("%.2f", (Double.valueOf(arrS[i][j].replaceAll("\\D", ""))*3.2));
 
 					
 					//arrS[i][j] =""+( Double.valueOf(arrS[i][j].replaceAll("\\D", ""))*3.2);
 				} else if (arrS[i][j].contains("€")) {
 				
 					//arrS[i][j] =""+( Double.valueOf(arrS[i][j].replaceAll("\\D", ""))*4.2);
-					 arrS[i][j] = ""+String.format("%.2f", (Double.valueOf(arrS[i][j].replaceAll("\\D", ""))*4.2));
+					 arrS[i][j] = String.format("%.2f", (Double.valueOf(arrS[i][j].replaceAll("\\D", ""))*4.2));
 				}
 			}
 		}

@@ -41,6 +41,12 @@ public class RandomNum {
      int a=r.nextInt(scanner.nextInt());
                                //50
      //   System.out.println(a);
+    
+     
+     
+     
+    // double rast=Math.random()+1;
+    // System.out.println("Rastgele sayimiz  "+ rast );
         
 
         

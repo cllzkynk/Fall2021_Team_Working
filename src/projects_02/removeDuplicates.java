@@ -75,10 +75,10 @@ public class removeDuplicates {
 		List<Integer> list = new ArrayList<>();
 
 		for (int i = 0; i < useThisArray.length; i++) {
-			for (int j = i + 1; j < useThisArray.length; j++) {
+			
 				if (!list.contains(useThisArray[i])) {
 					list.add(useThisArray[i]);
-				}
+				
 			}
 		}
 
