@@ -65,6 +65,6 @@ public class Common2Arrays {
 
 
 
-    }
+        scan.close();  }
 
 }

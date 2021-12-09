@@ -18,5 +18,5 @@ public class GetTotalDeneme {
     int i3 = Integer.parseInt(num3.replaceAll("[$A-Za-z]", ""));
     int total = i1 + i2 + i3;
     if (total < 0) System.out.println("-1"); else System.out.println(total);
-  }
+    scan.close(); }
 }

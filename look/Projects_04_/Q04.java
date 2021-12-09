@@ -43,5 +43,5 @@ public class Q04 {
         System.out.println("ort = " + ort);
         System.out.println("ortGecenSayisi = " + ortGecenSayisi);
 
-    }
+        scan.close();  }
 }

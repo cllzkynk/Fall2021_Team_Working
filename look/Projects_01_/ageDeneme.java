@@ -23,5 +23,5 @@ public class ageDeneme {
     } else {
       System.out.println("Lütfen geçerli bir yaş giriniz");
     }
-  }
+scan.close();  }
 }

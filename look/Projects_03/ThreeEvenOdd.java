@@ -46,7 +46,7 @@ public class ThreeEvenOdd {
 
         boolean sonuc = threeEvenOrOdd(dizi);
         System.out.println(sonuc);
-    }
+        scanner.close();  }
     public static boolean threeEvenOrOdd(int[] arr){
 
         int sayacC = 0;

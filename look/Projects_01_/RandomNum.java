@@ -43,5 +43,5 @@ public class RandomNum {
 			
 			System.out.print(rnd.nextInt(max)+"\t"); // 0 ile max arasinda rastgele sayi uretecek
 		}
-    }
+		scanner.close();  }
 }

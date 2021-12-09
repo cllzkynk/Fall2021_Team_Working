@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class twoString {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		/*

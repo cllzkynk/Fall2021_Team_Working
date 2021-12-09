@@ -64,7 +64,7 @@ public class getPopulation {
 
         int sonuc = populationOfCountry(countryNames, countryPopulations, ulkeadi);
         System.out.println(sonuc);
-    }
+        scanner.close();   }
     public static int populationOfCountry(String[] countryNames , int[] countryPopulations , String country){
 
         int nufus = 0;

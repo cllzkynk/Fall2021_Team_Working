@@ -65,6 +65,6 @@ public class printEvenNumbers {
                 System.out.println(i);
             }
         }
-    }
+        scanner.close();  }
 
 }

@@ -49,7 +49,7 @@ public class QMarket {
 		System.out.println("ortalama kazanç : " + getOrtalamaKazanc());
 		System.out.println("ortalamanın ustundeki gun : " + getOrtalamaninUstundeKazancGunleri());
 		System.out.println("ortalamanın altındaki gun : " + getOrtalamaninAltindaKazancGunleri());
-	}
+	sc.close();}
 
 	private static String getOrtalamaninAltindaKazancGunleri() {//6. adım
 		String ortAltGun = "";

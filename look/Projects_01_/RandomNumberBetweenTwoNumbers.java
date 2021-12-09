@@ -1,6 +1,5 @@
 package Projects_01_;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class RandomNumberBetweenTwoNumbers {
@@ -48,5 +47,5 @@ public class RandomNumberBetweenTwoNumbers {
         System.out.println(randomInRange);
 
 
-    }
+        scanner.close();  }
 }

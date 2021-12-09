@@ -70,7 +70,7 @@ public class days {
             default:
                 System.out.println("this is not a valid day");
         }
-    }
+        scanner.close();  }
 }
 
 

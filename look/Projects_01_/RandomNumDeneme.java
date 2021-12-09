@@ -15,5 +15,5 @@ public class RandomNumDeneme {
 
       System.out.println(rnd.nextInt(max));
     }
-  }
+    scan.close(); }
 }

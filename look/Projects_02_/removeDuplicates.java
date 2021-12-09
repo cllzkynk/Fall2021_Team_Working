@@ -78,7 +78,7 @@ public class removeDuplicates {
         }
         temp[j++]=useThisArray[n-1];
         System.out.println(Arrays.toString(temp));
-    }
+        scan.close();    }
 
 
 }

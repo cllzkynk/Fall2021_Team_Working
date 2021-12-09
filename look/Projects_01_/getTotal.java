@@ -81,7 +81,7 @@ else{
            System.out.println(-1);
        }
 
-        }
+        scanner.close();     }
 
 
     }

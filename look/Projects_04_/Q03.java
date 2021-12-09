@@ -38,5 +38,5 @@ public class Q03 {
         }
         System.out.println(liste + " nin elemanlarinin kareleri toplami = " + sum);
 
-    }
+        scanner.close();  }
 }

@@ -49,7 +49,7 @@ public class sameFirstAndLast {
         }
 
 
-    }
+        scan.close();   }
 
 
 }

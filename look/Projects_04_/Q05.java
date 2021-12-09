@@ -18,7 +18,7 @@ public class Q05 {
         }
 
         System.out.println(tekElemanlar(dizi));
-    }
+ sc.close();   }
 
     public static ArrayList<Integer> tekElemanlar(int[] sayi)
     {

@@ -30,5 +30,5 @@ public class totalLetterCountCheck {
         }else{
             System.out.println(false);
         }
-    }
+        scanner.close();   }
 }

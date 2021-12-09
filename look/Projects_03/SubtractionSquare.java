@@ -61,7 +61,7 @@ Parameter 1 toplamin karesi+Parameter 1 toplamin karesi= sonuc
 
         int sonuc = substSquare(num1, num2);
         System.out.println(sonuc);
-    }
+        scanner.close();  }
     public static int getSumOfSquares(int n) {
 
         int sum = 0;

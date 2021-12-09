@@ -14,5 +14,5 @@ public class PerfectSquareDeneme {
     }
     if (temp == 1) System.out.println("True"); 
     else System.out.println("False");
-  }
+    scan.close();  }
 }

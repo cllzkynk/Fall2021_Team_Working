@@ -34,5 +34,5 @@ public class QFibonacci {
             i++;
         }
         System.out.println(fibo);
-    }
+        scan.close();  }
 }

@@ -14,4 +14,4 @@ public class CountDeneme {
             counter++;
         }
     }System.out.println(counter);
-}}
+    scan.close();}}

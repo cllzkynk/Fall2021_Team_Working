@@ -59,7 +59,7 @@ public class QManav {
 		}else {
 			kasa();
 		}
-	}
+		scan.close();}
 	public static void kasa() {
 		System.out.println("Toplam odenecek tutar: " + toplanOdenecekTutar);
 

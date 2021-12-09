@@ -58,7 +58,7 @@ public class reverseArr {
 
 
         System.out.println(Arrays.toString(reversed));
-    }
+        scan.close();  }
 
 }
 

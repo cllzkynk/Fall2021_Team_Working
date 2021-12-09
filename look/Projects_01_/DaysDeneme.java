@@ -35,5 +35,5 @@ public class DaysDeneme {
         System.out.println("Lütfen geçerli bir numara giriniz");
         break;
     }
-  }
+    scan.close(); }
 }

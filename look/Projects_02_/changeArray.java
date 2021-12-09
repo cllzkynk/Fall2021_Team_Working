@@ -54,5 +54,5 @@ public class changeArray {
 
         System.out.println(Arrays.toString(UseThisArray));
 
-    }
+        scan.close(); }
 }

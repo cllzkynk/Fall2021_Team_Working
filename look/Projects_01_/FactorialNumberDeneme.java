@@ -13,5 +13,5 @@ public class FactorialNumberDeneme {
       factor *= i;
     }
     System.out.println(factor);
-  }
+    scan.close(); }
 }

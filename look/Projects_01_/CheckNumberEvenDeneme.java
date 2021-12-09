@@ -13,5 +13,5 @@ public class CheckNumberEvenDeneme {
             System.out.println("Çift bir sayı girdiniz");
         }else
         System.out.println("Tek bir sayı girdiniz.");
-    }
+        scan.close();  }
 }

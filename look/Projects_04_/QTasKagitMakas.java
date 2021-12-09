@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class QTasKagitMakas {
 
+	@SuppressWarnings({ "resource", "unused" })
 	public static void main(String[] args) {
 		// tas >makas
 		// makas >kagit

@@ -11,5 +11,5 @@ public class PrintEvenNumbersDeneme {
         if(i%2==0)System.out.print(i+" ,");
     }
         
-    }
+    scan.close(); }
 }

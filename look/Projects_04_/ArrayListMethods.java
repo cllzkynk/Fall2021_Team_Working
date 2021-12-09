@@ -9,7 +9,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class ArrayListMethods {
-    public static void main(String[] args) {
+    @SuppressWarnings({ "unlikely-arg-type", "unused", "serial" })
+	public static void main(String[] args) {
     /*
      Array List genel Tanimi:
 

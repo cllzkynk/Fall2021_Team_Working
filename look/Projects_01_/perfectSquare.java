@@ -73,6 +73,6 @@ public class perfectSquare {
 		} else {
 			System.out.println("false");
 		}
-    }
+		scanner.close();  }
 
 }
