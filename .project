@@ -20,4 +20,51 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/Projects_05</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>src/Projects_05/GameGuess</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>src/Projects_05/Laptop</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>src/Projects_05/GameGuess/GuessGame.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/CELL~1/AppData/Local/Temp/Rar$DRa13892.44609/Projects_05/GameGuess/GuessGame.java</locationURI>
+		</link>
+		<link>
+			<name>src/Projects_05/GameGuess/MainClas.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/CELL~1/AppData/Local/Temp/Rar$DRa13892.44609/Projects_05/GameGuess/MainClas.java</locationURI>
+		</link>
+		<link>
+			<name>src/Projects_05/Laptop/Calculation.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/CELL~1/AppData/Local/Temp/Rar$DRa13892.44609/Projects_05/Laptop/Calculation.java</locationURI>
+		</link>
+		<link>
+			<name>src/Projects_05/Laptop/Data.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/CELL~1/AppData/Local/Temp/Rar$DRa13892.44609/Projects_05/Laptop/Data.java</locationURI>
+		</link>
+		<link>
+			<name>src/Projects_05/Laptop/PriceForOneLaptop.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/CELL~1/AppData/Local/Temp/Rar$DRa13892.44609/Projects_05/Laptop/PriceForOneLaptop.java</locationURI>
+		</link>
+		<link>
+			<name>src/Projects_05/Laptop/Test1.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/CELL~1/AppData/Local/Temp/Rar$DRa13892.44609/Projects_05/Laptop/Test1.java</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

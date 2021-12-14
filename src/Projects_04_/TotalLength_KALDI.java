@@ -1,8 +1,7 @@
 package Projects_04_;
+ 
 
-import java.util.HashSet;
-
-public class TotalLength {
+public class TotalLength_KALDI {
 
     /*
 

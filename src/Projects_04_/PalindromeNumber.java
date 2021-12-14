@@ -1,5 +1,7 @@
 package Projects_04_;
 
+import java.util.Scanner;
+
 public class PalindromeNumber {
 
       /*
@@ -71,4 +73,25 @@ public class PalindromeNumber {
         İPUCU:  Bu soru için while loop kullansanız iyi olur
 
      */
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Gir bi tamsayi 2,3,4,... basamakli falan olsun");
+		int num=scan.nextInt();
+		int Pol=num+tersCevir(num);
+		System.out.println("Girilen sayinin kendisi "
+				+ "ile tersinin toplami "+ (isPlondrome(Pol)?"Polindromdur":"Polindrom degildir") );
+		scan.close();
+	}
+
+	public static boolean isPlondrome(int pol) {
+		StringBuilder sb=new StringBuilder(String.valueOf(pol));
+		if(pol==Integer.parseInt(sb.reverse().toString())) return true ;
+		
+return false ;	}
+
+	public static int tersCevir(int num) {
+		StringBuilder sb=new StringBuilder(String.valueOf(num));
+int	num1=Integer.parseInt(sb.reverse().toString());
+		
+	return num1 ;}
 }
