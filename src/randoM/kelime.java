@@ -29,13 +29,13 @@ public class kelime {
 
 		System.out.println(oyuncu1 + " kelimenizi giriniz");
 		kelime = scan.next();
-		System.out.println(oyuncu1 + " .  oyuncununkelimesi  : " + kelime);
+		System.out.println(oyuncu1 +bitis(oyuncu1)+ " kelimesi  : " + kelime);
 		elGecti();
 		sor();
 	}
 
 	public static void sor() {
-		System.out.println(oyuncu + " . oyuncu girelen kelimeyi kabul ediyormusun   E/H");
+		System.out.println(oyuncu + "  girelen kelimeyi kabul ediyormusun   E/H");
 		kabul = scan.next().charAt(0);
 		if (kabul == 'E') {
 			if (oyuncu.equals(oyuncu1)) {
@@ -83,7 +83,7 @@ public class kelime {
 		System.out.println(oyuncu1 + bitis(oyuncu1) + " puani : " + puan1);
 		System.out.println(oyuncu2 + bitis(oyuncu2) + "  puani : " + puan2);
 		if (kabul == 'H') {
-			System.out.println(oyuncu + " .oyuncu kazandi Cunku rakip gecersiz kelime girdi");
+			System.out.println(oyuncu + "  kazandi Cunku rakip gecersiz kelime girdi");
 		} else if (puan1 > puan2) {
 			System.out.println(oyuncu1 + " kazandi.");
 		} else if (puan2 > puan1) {

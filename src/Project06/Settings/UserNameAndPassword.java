@@ -4,6 +4,11 @@ import java.util.ArrayList;
 
 public class UserNameAndPassword {
 
+	public void addUserToList() {
+		// TODO Auto-generated method stub
+		
+	}
+
     /*
         DO NOT CHANGE THE addUserToList METHOD
 
